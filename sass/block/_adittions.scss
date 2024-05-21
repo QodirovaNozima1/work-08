@@ -1,0 +1,51 @@
+.adittions{
+    padding-top: 20px;
+    background: rgb(192, 219, 228);
+    &__wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: center;
+        gap: 32px;
+    }
+    &__card{
+        width: calc(33% - 21.33px);
+        padding: 69px 34px;
+        background: $bg-py;
+        display: flex;
+        text-align: center;
+        border-radius: 8px;
+        transition: .3s;
+        box-shadow: 1px solid rgba(222, 216, 216, 0.867);
+        &:hover{
+            transform: scale(.8);
+            p{
+                color: rgba(247, 186, 14, 1);
+            }
+            background: $bg-title;
+            cursor: pointer;
+        }
+    }
+    &__text{
+        font-size: 22px;
+        font-weight: 700;
+        color: $bg-light;
+    }
+    &__desc{
+        font-size: 36px;
+        font-weight: 400;
+        color: $bg-text;
+        width: 387px;
+    }
+}
+
+
+@media (max-width:800px){
+    .adittions{
+        &__card{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        }
+    }
+}

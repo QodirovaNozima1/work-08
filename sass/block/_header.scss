@@ -1,0 +1,85 @@
+.header{
+    background:$bg-py;
+}
+.navbar{
+    padding-top: 41px;
+    display: flex;
+    justify-content: space-between;
+    &__logo{
+        display: flex;
+        gap: 5px;
+        align-items: center;
+    } 
+    &__text{
+        font-size: 28px;
+        font-weight: 700;
+        color:$bg-text;
+    }
+    &__collection{
+        display: flex;
+        gap: 32px;
+        align-items: center;
+        justify-content: center;
+    }
+    &__item{
+        color: $bg-text;
+        font-size: 16px;
+        font-weight: 500;
+        transition: .25s;
+        &:hover{
+            color: $bg-light;
+        }
+    }
+    &__btn{
+        width: 116px;
+        height: 37px;
+        border-radius: 30px;
+        background: $bg-light;
+        color: $bg-text;
+        font-size: 16px;
+        font-weight: 500;
+        border: none;
+        transition: .25s;
+        &:hover{
+            transform: scale(0.9);
+        }
+    }
+    &__menu{
+        display: none;
+        background: transparent;
+        border: none;
+    }
+}
+
+
+@media (max-width:1020px){
+    .navbar{
+        &__collection{
+            display: none;
+        }
+        &__menu{
+            display:flex;
+        }
+    }
+}
+
+@media (max-width:1000px){
+    .navbar{
+        &__text{
+            font-size: 20px;
+        }
+        &__collection{
+            display: none;
+        }
+        &__menu{
+            display:flex;
+        }
+    }
+}
+@media (max-width:500px){
+    .navbar{
+        &__text{
+            font-size: 16px;
+        }
+    }
+}

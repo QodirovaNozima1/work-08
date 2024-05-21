@@ -1,0 +1,41 @@
+.footer{
+    background: $bg-py;
+    padding-top: 25px;
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__info{
+        cursor: pointer;
+        display: flex;
+        flex-direction: row;
+        gap: 2px;
+        padding-top: 10px;
+    }
+    &__more{
+        display: flex;
+        flex-direction: row;
+        padding-top: 10px;
+    }
+    .dark{
+        color: $bg-text;
+    }
+    .light{
+        color: $bg-light;
+    }
+}
+
+
+@media (max-width:990px){
+    .footer{
+        display: flex;
+        flex-direction: column;
+        &__info{
+            display: none;
+        }
+        &__more{
+            display: block;
+            flex-direction: row;
+        }
+    }
+}
